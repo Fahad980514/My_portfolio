@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fahad Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="70" tabindex="0">
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="container hero-content text-center">
+      <h1 data-aos="fade-up">Hello, I'm Muhammad Fahad</h1>
+      <h3 data-aos="fade-up" data-aos-delay="200">Python Developer & Data Enthusiast</h3>
+      <p data-aos="fade-up" data-aos-delay="200">And This is my Rezume</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+ <section id="about" class="section-dark">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+    <div class="row align-items-center text-center text-md-start">
+
+      <!-- Image Column -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <img src="static/img/IMG_20230313_071432_741.jpg" class="img-fluid rounded-circle about-img mx-auto d-block" alt="Muhammad Fahad">
+        <div class="text-center mt-4">
+  <a href="your-cv.pdf" class="btn btn-outline-light me-2" target="_blank">Download CV</a>
+  <a href="#contact" class="btn btn-outline-light me-2">Hire Me</a>
+</div>
+      </div>
+
+
+      <!-- Text Column -->
+      <div class="col-md-8" data-aos="fade-left">
+        <p>As a self-taught Python developer, I have honed my programming skills through hands-on projects,
+          continuous learning, and a passion for problem-solving. With a strong foundation in data manipulation and visualization,
+          I am proficient in libraries like pandas and Plotly, allowing me to extract insights from complex datasets. My journey in coding has been driven by curiosity and determination,
+          leading me to explore advanced techniques such as rolling averages and grouped bar charts. I am also developing a stylish portfolio webpage to showcase my technical expertise,
+          demonstrating my ability to integrate web development with data-driven storytelling. Eager to deepen my knowledge,
+          I am actively working towards mastering data science and AI to leverage technology for impactful solutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Resume Section -->
+<!-- Resume Section -->
+<section id="resume" class="section-dark">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Resume</h2>
+
+    <div class="row">
+      <!-- Education -->
+      <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <h4>Education</h4>
+        <ul class="list-unstyled">
+          <li><strong>Bachelor of Computer Science</strong><br>BITS Pilani, 2025-Present</li>
+        </ul>
+      </div>
+
+      <!-- Experience -->
+      <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <h4>Certification</h4>
+        <ul class="list-unstyled">
+          <li><strong>Python Developer</strong><br>100 Days of Code: The Complete Python Pro Bootcamp,<br> By Dr.Angela Yu</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="row">
+      <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+        <h4>Work Experience</h4>
+        <ul class="list-unstyled">
+          <li><strong>Freelance Projects</strong><br>Developed Flask-based apps, data dashboards using Plotly & Pandas.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Services Section -->
+<section id="services" class="section-dark">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Services</h2>
+    <div class="row text-center">
+
+      <!-- Web Development -->
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="p-4">
+          <i class="bi bi-code-slash fs-1 mb-3"></i>
+          <h5>Web Development</h5>
+          <p>Custom websites and web apps with Flask & Django.</p>
+        </div>
+      </div>
+
+      <!-- Data Visualization -->
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="p-4">
+          <i class="bi bi-bar-chart fs-1 mb-3"></i>
+          <h5>Data Visualization</h5>
+          <p>Insights from data using pandas & Plotly.</p>
+        </div>
+      </div>
+
+      <!-- API Development -->
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="p-4">
+          <i class="bi bi-cloud fs-1 mb-3"></i>
+          <h5>API Development</h5>
+          <p>RESTful APIs built with Flask-RESTful.</p>
+        </div>
+      </div>
+
+      <!-- Automation Scripts -->
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="p-4">
+          <i class="bi bi-gear fs-1 mb-3"></i>
+          <h5>Automation Scripts</h5>
+          <p>Python tools to automate repetitive tasks and workflows.</p>
+        </div>
+      </div>
+
+      <!-- Dashboards -->
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="500">
+        <div class="p-4">
+          <i class="bi bi-graph-up fs-1 mb-3"></i>
+          <h5>Dashboards</h5>
+          <p>Interactive dashboards for data monitoring and analysis.</p>
+        </div>
+      </div>
+
+      <!-- Technical Writing -->
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="600">
+        <div class="p-4">
+          <i class="bi bi-pencil-square fs-1 mb-3"></i>
+          <h5>Technical Writing</h5>
+          <p>Clear, concise documentation for your code and APIs.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Skills Section -->
+<section id="skills" class="section-dark">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Skills</h2>
+    <div class="row">
+
+      <!-- Left Column -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <p>Python</p>
+        <div class="progress mb-3"><div class="progress-bar skill-python"></div></div>
+
+        <p>Flask</p>
+        <div class="progress mb-3"><div class="progress-bar skill-flask"></div></div>
+
+        <p>Pandas</p>
+        <div class="progress mb-3"><div class="progress-bar skill-pandas"></div></div>
+
+        <p>Matplotlib</p>
+        <div class="progress mb-3"><div class="progress-bar skill-matplotlib"></div></div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <p>HTML & CSS</p>
+        <div class="progress mb-3"><div class="progress-bar skill-htmlcss"></div></div>
+
+        <p>Plotly</p>
+        <div class="progress mb-3"><div class="progress-bar skill-plotly"></div></div>
+
+        <p>Seaborn</p>
+        <div class="progress mb-3"><div class="progress-bar skill-seaborn"></div></div>
+      </div>
+    </div>
+
+    <!-- GitHub Button -->
+    <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="300">
+      <a href="https://github.com/Fahad980514" target="_blank" class="btn animated-github-btn">
+  <i class="bi bi-github"></i> View My Projects on GitHub
+</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact Section -->
+<section id="contact" class="section-dark py-5">
+  <div class="container">
+    <div class="row contact-row">
+      <!-- Left Column - Get In Touch -->
+      <div class="col-md-6 contact-left">
+        <h2 class="text-light mb-4">Get In Touch</h2>
+        <form action="{{ url_for('home') }}" method="POST">
+  <div class="mb-3">
+    <input type="text" name="name" class="form-control bg-white text-dark border-0" placeholder="Your Name" required>
+  </div>
+  <div class="mb-3">
+    <input type="email" name="email" class="form-control bg-white text-dark border-0" placeholder="Your Email" required>
+  </div>
+  <div class="mb-3">
+    <input type="text" name="phone" class="form-control bg-white text-dark border-0" placeholder="Your Phone">
+  </div>
+  <div class="mb-3">
+    <textarea name="message" class="form-control bg-white text-dark border-0" rows="5" placeholder="Write a Message" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-outline-light px-4">Send Message</button>
+</form>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="alert alert-success mt-3">
+      {{ messages[0] }}
+    </div>
+  {% endif %}
+{% endwith %}
+
+
+      </div>
+
+      <!-- Right Column - My Contact Details -->
+      <div class="col-md-6 contact-right">
+        <h2 class="text-light mb-4">My Contact Details</h2>
+        <div class="text-light">
+          <div class="mb-4">
+            <h6 class="contact-label">Email</h6>
+            <p>braunheller16@gmail.com</p>
+          </div>
+          <div class="mb-4">
+            <h6 class="contact-label">Phone</h6>
+            <p>+60 11 6404 7360</p>
+          </div>
+          <div class="mb-4">
+            <h6 class="contact-label">Fax</h6>
+            <p>Not Yet</p>
+          </div>
+          <div>
+            <h6 class="contact-label">Address</h6>
+            <p>
+              Kuala lumpur<br>
+              Malaysia<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Footer -->
+    <footer class="footer-dark text-center py-5">
+  <div class="container">
+    <p class="text-white mb-4">
+      © Muhammad Fahad 2025. All rights reserved.
+    </p>
+    <div class="social-icons d-flex justify-content-center gap-3">
+      <a href="https://www.facebook.com/M.fahad.156" target="_blank" rel="noopener noreferrer" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/fahaaad__27/" target="_blank" rel="noopener noreferrer" class="social-circle"><i class="fab fa-instagram"></i></a>
+      <a href="www.linkedin.com/in/muhammad-fahad-05b9a9237" target="_blank" rel="noopener noreferrer" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/Fahad980514" target="_blank" rel="noopener noreferrer" class="social-circle"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap JS & dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  </script>
+<script>
+  const navbar = document.querySelector('.navbar');
+  const heroHeight = document.getElementById('home').offsetHeight;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > heroHeight - navbar.offsetHeight) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+<script>
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(current)) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+
+</html>
